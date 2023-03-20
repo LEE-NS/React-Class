@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>React에서 많이 사용되어지는 Javascript 문법</h1>
+        <textarea cols="150" rows="100">
+            
+            1. Object Shorthand Assignment
+
+                let name = "Jihun"
+                let age = 20
+
+                let person = {
+                    name : name,
+                    age : age
+                }
+
+                let person = {name, age};
+
+            2. Destructuring
+                
+                let person = {
+                    name: "Jihun",
+                    age: 20
+                }
+
+                let name = person.name
+                let age = person.age
+
+                let name = person['name']
+                let age = person['age']
+
+                let {name, age} = person
+                let {name} = person
+
+                let array = [1,2,3,4,5];
+                let [n1, n2] = array
+                
+                let [n1, n2, ...other] = array
+
+
+            3. Spread
+            
+                let person = {
+                    name: "Jihun",
+                    age: 20
+                }
+
+                let person2 = {...person}
+
+                let a = [1, 2, 3];
+                let b = [...a];
+                let c = [...a, 4, 5];
+
+            4. 삼항 연산자(조건 연산자)
+            
+                let person = {name: "Jihun", age: 20}
+
+                if(person) {
+                    console.log(person.name)
+                } else {
+                    console.log("there is no cow level")
+                }
+
+                
+        </textarea>
+        <script>
+            //let person = {name: "Jihun", age: 20}
+            let person = null;
+
+            console.log(person ? person.name : 'there is no cow level');
+            /* if(person) {
+                console.log(person.name)
+            } else {
+                console.log("there is no cow level")
+            } */
+        </script>
+    </body>
+</html>

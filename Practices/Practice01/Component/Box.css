@@ -1,0 +1,36 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+form {
+    margin-top: 30px;
+    width: 100%;
+    height: 80%;
+}
+.inf {
+    width: 169px;
+    height: 60%;
+    line-height: 25px;
+    margin: 0 auto;
+}
+.inf input {
+    height: 25px;
+    border: 0;
+    border-radius: 5px;
+}
+.inf input:focus {
+    outline: 1px solid #00000055;
+}
+form > p {
+    width: 80px;
+    height: 30px;
+    margin: 30px auto 0;
+}
+form > p > input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #98af74
+}

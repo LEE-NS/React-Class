@@ -1,0 +1,50 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+#outBg {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    margin-top: 30px;
+
+}
+.inf {
+    width: 170px;
+    height: 60%;
+    line-height: 25px;
+    margin: 0 auto;
+
+}
+.inf input {
+    width: 100%;
+    height: 25px;
+    border: 0;
+    border-radius: 5px;
+}
+.inf input:focus {
+    outline: 1px solid #00000055;
+}
+#outBg > p {
+    width: 80px;
+    height: 30px;
+    margin: 30px auto 0;
+}
+#outBg > p > button {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #98af74
+}
+
+.ErrText {
+    display: none;
+    position: absolute;
+    width: 216px;
+    left: 50%;
+    margin-left: -108px;
+    color: red;
+    font-size: 10px;
+}

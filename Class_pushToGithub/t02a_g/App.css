@@ -1,0 +1,33 @@
+@charset "UTF-8";
+.main {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid black;
+  text-align: center;
+}
+.item_img {
+  width: 100%;
+}
+.box button {
+  width: 80px;
+  height: 80px;
+  margin: 30px 30px;
+  font-size: 15px;
+}
+
+.WIN {
+  border: 5px solid green;
+  color: green;
+}
+.LOSE {
+  border: 5px solid red;
+  color: red;
+}
+.TIE {
+  border: 5px solid yellow;
+  color: black;
+}

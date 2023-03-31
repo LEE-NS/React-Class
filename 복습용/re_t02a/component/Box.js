@@ -15,7 +15,7 @@ const Box = (props) => {
         alt='가위바위보_이미지'
         className='itemImg'
          />
-        <p>{result ? result : "낼 것을 고르시오"}</p>
+        <p>{result ? result : "낼 것을 고르시오!"}</p>
     </div>
   )
 };

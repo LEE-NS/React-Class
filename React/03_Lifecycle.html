@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifecycle</title>
+</head>
+<body>
+    <h1>Lifecycle</h1>
+    <textarea cols="150" rows="100">
+        - 라이프사이클은 생명주기이다. React 앱의 생명주기
+        - React 앱은 세 가지의 라이프사이클을 가지고 있다.
+            1. Mounting : 앱이 실행되어 질 때~, 시작
+                constructor > render > componentDidMount
+            2. Updating : 앱이 실행되는 도중에~
+                render > componentDidUpdating
+            3. Unmounting : 앱이 종료되었을 때~
+                componentWillUnmount
+        - 위의 세 가지는 클래스 컴포넌트 방식에서 적용되는 라이프사이클이다.
+        - 펑션 컴포넌트에서 제공되는 라이프사이클은 다음과 같다.
+            1. useEffet(() => {}. []);
+            2. useEffet(() => {}. [스테이트]);
+
+        - 클래스 컴포넌트 방식의 라이프사이클에서 중요한 함수들
+            1. constructor()
+                생성자 함수, 최초의 스테이트 생성에 사용되어짐
+            2. render()
+                UI를 작성
+            3. componentDidMount()
+                초기 렌더링이 끝났음을 알려주는 함수
+                state가 바뀌고 렌더가 끝나면 호출된다.
+                API 호출이 이루어지기 적절한 시점이다
+            4. componentDidUpdating()
+                스테이트의 값이 바뀌면, 정상적으로 바뀌었음을 알려줌
+            5. componentWillUnmount()
+                앱이 끝났음을 알림
+
+        - 펑션 컴포넌트 방식의 라이프사이클
+            1. useEffet(() => {}. [])
+                useEffet는 기본적으로 앱 실행 후 첫번째 렌더 다음에 실행된다.
+                통상적으로 화면에 처음 그려줘야 하는 API가 호출되는 시점임
+            2. useEffet(() => {}. [state])
+                useEffet의 두번째 인자인 배열에 state값을 넣어주면 state값이 바뀔때마다 호출되는 기능을 한다.
+                componentDidUpdating과 같은 역할
+            
+                배열 안에 여러개의 state가 들어있다면 그 중에 하나라도 업데이트 되는 값이 있으면 해당 useEffet가 호출이 된다.
+
+                하지만 그 여러개의 state가 동시에 업데이트가 되었다고 하더라도 다 같이 한 번만 호출이 되어진다.
+
+                여러개의 state를 따로 관리하고 싶다면, useEffet를 더 작성해서 각각의 state값이 바뀔때 해당되는 useEffet만 실행되도록 할 수 있다.
+
+    </textarea>
+    <img src="https://cdn.filestackcontent.com/ApNH7030SAG1wAycdj3H" alt="라이프사이클_이미지">
+</body>
+</html>

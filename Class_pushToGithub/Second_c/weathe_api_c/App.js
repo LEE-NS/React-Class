@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   const [weather, setWeather] = useState(null);
   const [city, setCity] = useState('');
-  const cities = ['Busan', 'Seoul', 'Daegu', 'Daejeon'];
+  const cities = ['Busan', 'Seoul', 'Daegu', 'Jinju'];
   
   const getCurrentLocation = () => {
     navigator.geolocation.watchPosition((position) => {

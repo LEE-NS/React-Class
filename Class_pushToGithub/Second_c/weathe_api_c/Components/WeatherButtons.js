@@ -5,7 +5,7 @@ const WeatherButtons = ({cities, setCity}) => {
   console.log('들어오는지 확인 setcity', setCity);
   return (
     <div>
-        <Button variant="primary">📍 현재 위치</Button>
+        <Button variant="primary">📍 내 위치</Button>
         {cities.map((item) => {
           return <Button variant="secondary" onClick={() => setCity(item)}>{item}</Button>
         })}

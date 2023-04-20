@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Button } from 'react-bootstrap'
 
-const WeatherButtons = ({cities, city, setCity, handleCityChange}) => {
+const WeatherButtons = ({cities, setCity, city, handleCityChange}) => {
 
   return (
     <div>

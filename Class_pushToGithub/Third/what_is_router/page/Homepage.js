@@ -5,7 +5,7 @@ const Homepage = () => {
   return (
     <div>
         <h1>홈페이지</h1>
-        <Link to="/about">aboutpage로 이동!</Link>
+        <Link to="/about">aboutpage로 이동하기!</Link>
     </div>
   )
 }

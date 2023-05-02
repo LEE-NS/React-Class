@@ -18,6 +18,7 @@ const ProductAll = () => {
   useEffect(() => {
     getProducts();
   }, [query]);
+  
   return (
     <div>
         <Container>
@@ -36,3 +37,4 @@ const ProductAll = () => {
 export default ProductAll
 
 /* api 안의 상품 정보들을 각 상품들에 적용시켜 본다. */
+/* useEffect의 두 번째 파라미터가 비어있지 않다면 컴포넌트가 처음 나타날 때만 실행되는 것이 아니라. 두 번째 파라미터가 업데이트 될 때 마다 실행된다(두 번째 파라미터를 ) */

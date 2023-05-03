@@ -9,4 +9,4 @@
     npm install --save @fortawesome/react-fontawesome </br>
   - json-server(간이 API) : </br>
     npm install -g json-server (서버 설치) </br>
-    json-server --watch db.json --port 3004(새 터미널에서 실행, 3xxx번대를 이용할 것)
+    json-server --watch db.json --port 3004(새 터미널에서 실행, 3xxx번대를 이용)

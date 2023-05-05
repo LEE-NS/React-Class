@@ -15,6 +15,8 @@ const ProductAll = () => {
     let data = await response.json()
     setProductList(data);
   };
+  /* 간이 상품 API */
+  
   useEffect(() => {
     getProducts();
   }, [query]);

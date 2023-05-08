@@ -26,7 +26,6 @@ Redux
 - State를 관리하는 라이브러리 
 - action이 일어나면 reducer가 store를 건드려 action에 따른 상태 변화를 렌더링하여 보여줌
 
-
 - redux core 설치, react redux 설치
 - index.js에서 react.strictmode 대신 Provider 태그로 래핑 후 store를 props로 가져온다
 - src에 redux 폴더를 만들어 store와 redux 스크립트를 생성

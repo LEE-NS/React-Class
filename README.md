@@ -10,4 +10,4 @@
   - json-server(간이 API) : </br>
     npm install -g json-server (서버 설치) </br>
     json-server --watch db.json --port 3004(새 터미널에서 실행, 3xxx번대를 이용)
-  - Redux: 리덕스 코어, 리덕스 설치
+  - Redux: Redux-core, Redux 설치
